@@ -18,4 +18,4 @@ Route::get('/', HomeController::class);
 
 Route::get('produtos', [ProdutosController::class, 'index']);
 Route::get('produtos/inserir', [ProdutosController::class, 'inserir']);
-Route::get('produtos/{id}', [ProdutosController::class, 'busca']);
+Route::get('produtos/{id}', [ProdutosController::class, 'busca'])->name('exibir');
